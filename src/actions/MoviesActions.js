@@ -17,12 +17,6 @@ export const insertMovie = (movie) => ({
   movie,
 });
 
-export const insertPlaylist = (movie) => ({
-  type: actions.playlistInsert,
-  movie,
-});
-
-
 export const removeMovie = (id) => ({
   type: actions.removeMovie,
   id,

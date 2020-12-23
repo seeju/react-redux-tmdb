@@ -13,7 +13,8 @@ export const Playlist = () => {
       <>
       <h1>Playlist</h1>
       {playlist.map((movie, index) => (
-          <h5><Link key={index} to={`/movie/${movie?.id}`}>
+          <h5>
+              <Link key={index} to={`/movie/${movie?.id}`}>
                 {movie?.title}
                 </Link>
           </h5>
