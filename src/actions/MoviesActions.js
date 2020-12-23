@@ -4,8 +4,6 @@ export const actions = {
   removeMovie: 'RemoveMovie',
 }; 
 
-
-
 export const moviesList = (id, movies) => ({
   type: actions.moviesList,
   id,
