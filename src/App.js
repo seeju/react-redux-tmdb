@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, } from "react-router-dom";
 import { MoviesList } from "./components/MoviesList";
 import { MovieDetails } from "./components/MovieDetails";
 import { Playlist } from "./components/Playlist";
+import { NavigationBar } from "./components/NavigationBar";
 
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
 
     <>
       <BrowserRouter>
+      <NavigationBar />  
 
         <Switch>
           <Route exact path="/"><MoviesList /></Route>

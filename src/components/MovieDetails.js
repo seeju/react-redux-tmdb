@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { MoviesService } from "../api/MoviesService";
 import { Link } from 'react-router-dom';
 import { moviesList,insertMovie } from "../actions/MoviesActions";
@@ -29,7 +29,6 @@ export const MovieDetails = (props) => {
     <p>{!!movies && movies[id].overview}</p>
     <button onClick={() => dispatch(insertMovie(movies[id]))}>Add to playlist</button>
     <p></p>
-    <Link to="/">Back</Link>
     </>
     
   )

@@ -17,6 +17,9 @@ export const Playlist = () => {
               <Link key={index} to={`/movie/${movie?.id}`}>
                 {movie?.title}
                 </Link>
+                <button onClick={() => dispatch(removeMovie(index))}>
+                Remove
+              </button>
           </h5>
 
       ))}
